@@ -1,0 +1,101 @@
+:root {
+	--blue: #003049;
+	--red: #d62828;
+	--orange: #f77f00;
+	--yellow: #fcbf49;
+	--beige: #eae2b7;
+	--white: #fffafa;
+	--black: #222222;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container {
+	background-color: var(--blue);
+	width: min(90%, 500px);
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	padding: 4em 2em;
+	border-radius: 0.5em;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.section-container {
+	display: flex;
+	gap: 1em;
+	justify-content: center;
+}
+
+.btn {
+	padding: 1em 2em;
+	border-radius: 0.5em;
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.btn-focus {
+	background-color: var(--red);
+	color: var(--white);
+}
+
+.time-btn-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2em;
+}
+
+#time {
+	text-align: center;
+	color: var(--white);
+	font-size: 5em;
+	font-weight: 600;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+}
+
+#btn-start,
+#btn-pause {
+	padding: 1em 2em;
+	border-radius: 0.5em;
+	cursor: pointer;
+	background-color: var(--red);
+	color: var(--white);
+}
+
+#btn-reset {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: var(--white);
+	font-size: 2em;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
